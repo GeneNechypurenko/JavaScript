@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрационная форма</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <div>
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="login">
+        </div>
+
+        <div>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="confirmPassword">Подтверждение пароля:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+        </div>
+
+        <div>
+            <label for="fullName">Полное имя:</label>
+            <input type="text" id="fullName" name="fullName">
+        </div>
+
+        <div class="radio-group">
+            Пол:
+            <label>
+                <input type="radio" id="male" name="gender" value="М"> М
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="Ж"> Ж
+            </label>
+        </div>
+
+        <div class="checkbox-group">
+            Специализация:
+            <label>
+                <input type="checkbox" id="design" name="specialization" value="Дизайн"> Дизайн
+            </label>
+            <label>
+                <input type="checkbox" id="programming" name="specialization" value="Программирование"> Программирование
+            </label>
+            <label>
+                <input type="checkbox" id="admin" name="specialization" value="Администрирование"> Администрирование
+            </label>
+        </div>
+
+        <div>
+            <label for="position">Должность:</label>
+            <select id="position" name="position">
+                <option value="Директор">Директор</option>
+                <option value="Заместитель директора">Заместитель директора</option>
+                <option value="Начальник отдела">Начальник отдела</option>
+                <option value="Программист">Программист</option>
+                <option value="Дизайнер">Дизайнер</option>
+                <option value="Консультант">Консультант</option>
+                <option value="Служащий">Служащий</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button type="button" onclick="validateForm()">Регистрация</button>
+            <button type="reset">Сброс</button>
+        </div>
+
+    </form>
+</body>
+</html>

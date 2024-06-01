@@ -1,0 +1,27 @@
+.folder {
+    cursor: default;
+}
+
+.folder:hover {
+    font-weight: bold;
+}
+
+.collapsed {
+    display: none;
+}
+
+.book {
+    cursor: pointer;
+}
+
+.selected {
+    color: orange;
+}
+
+#resizable {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    resize: both;
+    overflow: auto;
+}

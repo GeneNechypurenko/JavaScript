@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #222;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+:root {
+    --clr: #372868;
+}
+
+section {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 60%;
+}
+
+.tabs {
+    position: relative;
+}
+
+.tabs input[type=radio] {
+    appearance: none;
+    display: none;
+}
+
+.tabs .labels {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs .labels label {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    opacity: 0.3;
+    transition: 0.5s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .labels label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .labels label:nth-child(3),
+.tabs input:nth-child(4):checked ~ .labels label:nth-child(4),
+.tabs input:nth-child(5):checked ~ .labels label:nth-child(5),
+.tabs input:nth-child(6):checked ~ .labels label:nth-child(6) 
+{
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    width: 360px;
+    height: 80px;
+    z-index: 1;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin-left: -20px;
+}
+
+.tabs input:nth-child(1):checked ~ .labels .indicator {
+    background: linear-gradient(90deg, var(--clr), #9890e4);
+    top: 0;
+}
+.tabs input:nth-child(2):checked ~ .labels .indicator {
+    background: linear-gradient(90deg, var(--clr), #39ff14);
+    top: 80px;
+}
+.tabs input:nth-child(3):checked ~ .labels .indicator {
+    background: linear-gradient(90deg, var(--clr), #14b8ff);
+    top: 160px;
+}
+.tabs input:nth-child(4):checked ~ .labels .indicator {
+    background: linear-gradient(90deg, var(--clr), #ff14e2);
+    top: 240px;
+}
+.tabs input:nth-child(5):checked ~ .labels .indicator {
+    background: linear-gradient(90deg, var(--clr), #ffa500);
+    top: 320px;
+}
+.tabs input:nth-child(6):checked ~ .labels .indicator {
+    background: linear-gradient(90deg, var(--clr), #ffff00);
+    top: 400px;
+}
+
+.content {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    width: 300px;
+    height: 80px;
+    z-index: 1;
+}
+
+.content .tabContent {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    opacity: 0.3;
+    transition: 0.5s;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.tabs input:nth-child(1):checked ~ .content .tabContent:nth-child(1),
+.tabs input:nth-child(2):checked ~ .content .tabContent:nth-child(2),
+.tabs input:nth-child(3):checked ~ .content .tabContent:nth-child(3),
+.tabs input:nth-child(4):checked ~ .content .tabContent:nth-child(4),
+.tabs input:nth-child(5):checked ~ .content .tabContent:nth-child(5),
+.tabs input:nth-child(6):checked ~ .content .tabContent:nth-child(6)
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type=text] {
+    cursor: text;
+    width: 180px;
+}
+
+button, input[type=text] {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.output {
+    background: #222f52;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}

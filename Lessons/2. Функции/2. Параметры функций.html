@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <script>
+        function mult(x, y) {
+            if (y === undefined)
+                y = x;
+            let z = x * y;
+            document.write(x + " умножить на " + y + " равно " + z + "<br/>");
+        }
+
+        function show() {
+            let z = 1;
+            for (const n of arguments)
+                z *= n;
+            document.write(z + "<br/>");
+        }
+
+        function sum(x = 8, y = 5) {
+            let z = x + y;
+            document.write(z + "<br/>");
+        }
+
+        function display(lang, ...temps) {
+            document.write(lang + "<br/>");
+            for (index in temps) {
+                document.write(temps[index] + "<br/>");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+        mult();
+        mult(10);
+        mult(10, 2);
+
+        show(5);
+        show(5, 4);
+        show(5, 4, 3);
+
+        sum();
+        sum(7);
+        sum(7, 12);
+
+        display("JavaScript", 1, -3, 4, 7, 15);
+        display("ECMAScript", 20, 30, 40);
+
+    </script>
+</body>
+
+</html>

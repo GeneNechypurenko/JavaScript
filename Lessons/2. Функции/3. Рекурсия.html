@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        let number = parseInt(prompt("Введите число: ", ""));
+        alert("Факториал числа равен: " + factorial(number));
+
+        function factorial(n) {
+            if (n == 0)
+                return 1; // базовая задача
+            else
+                return n * factorial(n - 1); // рекурсивный вызов
+        }
+    </script>
+</body>
+
+</html>

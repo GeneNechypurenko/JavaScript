@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker Example</title>
+    <link rel="stylesheet" href="slyle.css">
+</head>
+
+<body>
+    <aside>
+        <div class="asidebox">
+            <textarea id="text"></textarea>
+            <input type="color" id="color">
+            <button onclick="printText()">Print</button>
+            <button onclick="refillMarker()">Refill Marker</button>
+            <button onclick="clearOutput()">Clear Output Area</button>
+            <div id="ink-level">Ink: 100%</div>
+        </div>
+    </aside>
+
+    <section>
+        <div id="output"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

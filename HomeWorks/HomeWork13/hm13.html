@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на сервере</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <h1>Регистрация на сервере</h1>
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirmPassword">Подтверждение:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <hr>
+        <label for="fullName">Полное имя (ФИО):</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br>
+        <p>Пол:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Женский</label>
+        <br>
+        <p>Иностранные языки:</p>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">Английский</label>
+        <input type="checkbox" id="german" name="languages" value="german">
+        <label for="german">Немецкий</label>
+        <input type="checkbox" id="french" name="languages" value="french">
+        <label for="french">Французский</label>
+        <input type="checkbox" id="italian" name="languages" value="italian">
+        <label for="italian">Итальянский</label>
+        <input type="checkbox" id="spanish" name="languages" value="spanish">
+        <label for="spanish">Испанский</label>
+        <br>
+        <label for="occupation">Сфера деятельности:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="education">Образование</option>
+            <option value="engineering">Инженерия</option>
+            <option value="construction">Строительство</option>
+        </select>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="additionalInfo">Дополнительная информация:</label>
+        <textarea id="additionalInfo" name="additionalInfo"></textarea>
+        <br>
+        <button type="submit">Готово</button>
+        <button type="reset">Сброс</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

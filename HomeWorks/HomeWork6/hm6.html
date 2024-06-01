@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="tabs">
+                <input type="radio" id="create" name="group" checked>
+                <input type="radio" id="append" name="group">
+                <input type="radio" id="insert" name="group">
+                <input type="radio" id="edit" name="group">
+                <input type="radio" id="nested" name="group">
+                <input type="radio" id="remove" name="group">
+                <div class="labels">
+                    <label for="create">CREATE NEW LIST</label>
+                    <label for="append">ADD TO LIST END</label>
+                    <label for="insert">ADD TO POSITION</label>
+                    <label for="edit">EDIT ELEMENT</label>
+                    <label for="nested">ADD NESTED LIST</label>
+                    <label for="remove">REMOVE ELEMENT</label>                    
+                    <div class="indicator"></div>
+                </div>
+                <div class="content">
+                    <div class="tabContent" for="create">
+                        <button type="submit" id="createButton">CREATE NEW LIST</button>
+                    </div>
+                    <div class="tabContent" for="append">
+                        <input type="text" id="appendText" placeholder="Append Element">
+                    </div>
+                    <div class="tabContent" for="insert">
+                        <input type="text" id="insertText" placeholder="Insert Element">
+                    </div>
+                    <div class="tabContent" for="edit">
+                        <input type="text" id="editText" placeholder="Edit Element">
+                    </div>
+                    <div class="tabContent" for="nested">
+                        <input type="text" id="nestedText" placeholder="Nested List">
+                    </div>
+                    <div class="tabContent" for="remove">REMOVE ELEMENT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="output">
+        </div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
