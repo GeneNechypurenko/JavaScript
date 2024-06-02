@@ -1,0 +1,95 @@
+[
+    {
+        "question": "Что делает функция `alert` в JavaScript?",
+        "type": "radio",
+        "answers": [
+            { "text": "Выводит сообщение с запросом на ввод", "correct": false },
+            { "text": "Выводит сообщение в модальном окне", "correct": true },
+            { "text": "Выполняет функцию по расписанию", "correct": false }
+        ]
+    },
+    {
+        "question": "Как объявить переменную в JavaScript?",
+        "type": "radio",
+        "answers": [
+            { "text": "varName", "correct": false },
+            { "text": "var varName", "correct": true },
+            { "text": "variable varName", "correct": false }
+        ]
+    },
+    {
+        "question": "Какой оператор используется для строгого равенства?",
+        "type": "radio",
+        "answers": [
+            { "text": "==", "correct": false },
+            { "text": "===", "correct": true },
+            { "text": "!=", "correct": false }
+        ]
+    },
+    {
+        "question": "Что означает `NaN` в JavaScript?",
+        "type": "radio",
+        "answers": [
+            { "text": "Not-a-Number", "correct": true },
+            { "text": "Null-and-Null", "correct": false },
+            { "text": "Number-and-Number", "correct": false }
+        ]
+    },
+    {
+        "question": "Какие из следующих методов добавляют элемент в массив?",
+        "type": "checkbox",
+        "answers": [
+            { "text": "add()", "correct": false },
+            { "text": "push()", "correct": true },
+            { "text": "append()", "correct": false },
+            { "text": "unshift()", "correct": true }
+        ]
+    },
+    {
+        "question": "Как объявить функцию в JavaScript?",
+        "type": "radio",
+        "answers": [
+            { "text": "function myFunction() {}", "correct": true },
+            { "text": "def myFunction() {}", "correct": false },
+            { "text": "func myFunction() {}", "correct": false }
+        ]
+    },
+    {
+        "question": "Что такое `this` в JavaScript?",
+        "type": "radio",
+        "answers": [
+            { "text": "Это ссылка на текущий HTML-документ", "correct": false },
+            { "text": "Это ссылка на текущий объект", "correct": true },
+            { "text": "Это ссылка на глобальный объект", "correct": false }
+        ]
+    },
+    {
+        "question": "Какие методы преобразуют JSON в JavaScript?",
+        "type": "checkbox",
+        "answers": [
+            { "text": "JSON.parse()", "correct": true },
+            { "text": "JSON.stringify()", "correct": false },
+            { "text": "JSON.convert()", "correct": false },
+            { "text": "JSON.parseJSON()", "correct": false }
+        ]
+    },
+    {
+        "question": "Какие методы вызываются для получения текущей даты и времени?",
+        "type": "checkbox",
+        "answers": [
+            { "text": "new Date().getDate()", "correct": false },
+            { "text": "new Date()", "correct": true },
+            { "text": "new Date().now()", "correct": false },
+            { "text": "Date.now()", "correct": true }
+        ]
+    },
+    {
+        "question": "Что означает ключевое слово `return` в функции?",
+        "type": "radio",
+        "answers": [
+            { "text": "Прерывает выполнение функции и возвращает значение", "correct": true },
+            { "text": "Продолжает выполнение функции и возвращает значение", "correct": false },
+            { "text": "Прерывает выполнение функции, но не возвращает значение", "correct": false }
+        ]
+    }
+]
